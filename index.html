@@ -179,6 +179,13 @@ body{display:flex;align-items:center;justify-content:center}
 .note{margin-top:12px}
 .bottom-row{padding-top:16px}
 .bars{gap:8px;margin-top:28px}
+.prices .p3{flex:0 0 170px}
+.prices .p10{flex:1 1 0}
+.p10 .row{display:flex;align-items:center;gap:6px}
+.p10 .eq{font-size:44px;line-height:44px;font-weight:800;color:var(--grey);margin:0 4px 0 6px}
+.p10 .bulb-ico{width:30px;height:42px;margin:0 2px;vertical-align:middle}
+.p10 .bulb-ico rect{fill:#5b6170}
+.p10 .bulb-ico.b2{animation-delay:1.6s}
 </style>
 </head>
 <body>
@@ -229,7 +236,7 @@ body{display:flex;align-items:center;justify-content:center}
 
     <div class="prices in-wrap" style="animation-delay:.55s">
       <div class="p3"><div class="big">3&nbsp;$</div><div class="lbl">la journée</div></div>
-      <div class="p10"><div class="big">10&nbsp;$</div><div class="lbl"><b>le forfait</b><br>toutes tes journées</div></div>
+      <div class="p10"><div class="row"><span class="big">10&nbsp;$</span><span class="eq">=</span><svg class="bulb-ico" viewBox="0 0 40 56" aria-hidden="true"><defs><radialGradient id="bg2" cx="50%" cy="45%" r="50%"><stop offset="0" stop-color="#fff6d6"/><stop offset=".55" stop-color="#ffd25a"/><stop offset="1" stop-color="#ffb704"/></radialGradient></defs><path d="M20 3 C28 11 33 20 33 27 A13 13 0 0 1 7 27 C7 20 12 11 20 3 Z" fill="url(#bg2)"/><rect x="13" y="42" width="14" height="5" rx="2" fill="#ffffff"/><rect x="14.5" y="48.5" width="11" height="4" rx="2" fill="#ffffff" opacity=".85"/></svg><svg class="bulb-ico b2" viewBox="0 0 40 56" aria-hidden="true"><defs><radialGradient id="bg3" cx="50%" cy="45%" r="50%"><stop offset="0" stop-color="#fff6d6"/><stop offset=".55" stop-color="#ffd25a"/><stop offset="1" stop-color="#ffb704"/></radialGradient></defs><path d="M20 3 C28 11 33 20 33 27 A13 13 0 0 1 7 27 C7 20 12 11 20 3 Z" fill="url(#bg3)"/><rect x="13" y="42" width="14" height="5" rx="2" fill="#ffffff"/><rect x="14.5" y="48.5" width="11" height="4" rx="2" fill="#ffffff" opacity=".85"/></svg></div><div class="lbl"><b>pour les 4 journées</b></div></div>
     </div>
 
     <div class="defi in-wrap" style="animation-delay:.7s">
